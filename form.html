@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Form validation</title>
+</head>
+<body>
+    <div id="error">
+        <h3></h3>
+    </div>
+    <form onsubmit="return validateForm()"
+    action="text.html" id="form" name="myform" method="POST">
+        <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="e.g Jane">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" placeholder="******">
+        </div>
+        <div>
+            <label for="email">e-Mail</label>
+            <input id="email" name="email" type="text" placeholder="e.g jane@doe.com">
+        </div>
+        <button type="submit" value="register">Submit</button>
+    </form>
+    <footer>
+        <p>
+            Made with <img src="heart.png" alt="heart" class="heart"> <img src="heart_24.png" alt="heart" class="heart_24">  by Jelena
+        </p>
+    </footer>
+    <script src="form.js"></script>
+</body>
+</html>
